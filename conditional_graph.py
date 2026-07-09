@@ -43,8 +43,8 @@ builder.add_edge(["convert_to_inr_node", "convert_to_eur_node"], END)
 
 graph = builder.compile()
 
-from IPython.display import Image, display
+# from IPython.display import Image, display
 
-display(Image(graph.get_graph().draw_mermaid_png()))
+# display(Image(graph.get_graph().draw_mermaid_png()))
 
 graph.invoke({"amount_usd": 1000, "target_currency": "EUR"})
